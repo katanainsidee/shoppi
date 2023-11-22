@@ -43,9 +43,22 @@ header ul.nav li {
   cursor: pointer;
   transition: opacity 100ms ease;
 }
+
 header ul.nav li:hover {
   opacity: 0.7;
 }
+
+header .shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color 190ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+  color: rgb(99, 97, 85);
+}
+
 header .presentation::after {
   content: "Gone brands at the best prices";
   position: absolute;
