@@ -1,13 +1,64 @@
+import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Items from "./components/Items";
 
-function App() {
-  return (
-    <div className="wrapper">
-      <Header />
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [
+        {
+          id: 1,
+          title: "Adidas Adimatic",
+          img: "adidas Originals Adimatic.jpg",
+          desc: "spring/summer",
+          category: "shoes",
+          price: "9999",
+        },
+        {
+          id: 2,
+          title: "New Balance 703",
+          img: "New Balance 703.jpg",
+          desc: "spring/summer",
+          category: "shoes",
+          price: "19999",
+        },
+        {
+          id: 3,
+          title: "Atmos x Adidas Adimatic",
+          img: "atmos x adidas.jpg",
+          desc: "spring/summer",
+          category: "shoes",
+          price: "16399",
+        },
+        {
+          id: 4,
+          title: "Adidas Retropy E5",
+          img: "adidas Originals Retropy E5.jpg",
+          desc: "spring/summer",
+          category: "shoes",
+          price: "11299",
+        },
+        {
+          if: 5,
+          title: "Asics gel-kahana 8",
+          img: "asics gel-kahana 8.jpg",
+          desc: "spring/summer",
+          category: "shoes",
+          price: "10799",
+        },
+      ],
+    };
+  }
+  render() {
+    return (
+      <div className="wrapper">
+        <Header />
+        <Items items={this.state.items} />
+        <Footer />
+      </div>
+    );
+  }
 }
-
 export default App;
