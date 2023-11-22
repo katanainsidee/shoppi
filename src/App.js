@@ -1,5 +1,13 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 function App() {
-  return <div>Shop</div>;
+  return (
+    <div className="wrapper">
+      <Header />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
