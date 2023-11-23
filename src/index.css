@@ -64,6 +64,28 @@ header .shop-cart .item p {
   font-weight: 600;
 }
 
+header .shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 200ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  color: #d83030;
+  transform: scale(1.1);
+}
+
+header .shop-cart .summa {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20;
+  margin-bottom: 12px;
+}
+
 header .presentation {
   margin-right: 50px;
   margin-top: 50px;
