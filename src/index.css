@@ -10,6 +10,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
+
+header {
+  position: relative;
+}
+
 .wrapper {
   width: 1280px;
   margin: 50px auto;
@@ -20,8 +25,22 @@ header .logo {
   font-size: 20px;
 }
 
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: #fafafa;
+  -webkit-box-shadow: 4px 5px 15px -7px #606060;
+  box-shadow: 4px 5px 15px -7px #606060;
+  z-index: 1000;
+}
+
 header .presentation {
-  margin: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background: url("img/dreams.jpg") no-repeat;
   width: 100%;
   height: 500px;
@@ -51,12 +70,13 @@ header ul.nav li:hover {
 header .shop-cart-button {
   float: right;
   cursor: pointer;
-  transition: color 190ms ease;
+  transition: color, transform 190ms ease;
 }
 
 header .shop-cart-button:hover,
 header .shop-cart-button.active {
   color: rgb(99, 97, 85);
+  transform: scale(1.2);
 }
 
 header .presentation::after {
